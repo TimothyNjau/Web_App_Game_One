@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Guess My Number</title>
+   <link rel="stylesheet" href="static/styles.css">
+   <script src="static/script.js"></script>
+</head>
+<body>
+   <div class="gameContainer"> 
+      <h1>Guess My Number</h1>
+      <h2> Guess a random number</h2>
+      <div id="rangeField" class="input">
+         <input type="number" id="minVal" value="1">
+         <input type="number" id="maxVal" value="100">
+         <button id="targetBtn" onclick="rangeFunc()">New Target</button>
+      </div>
+      <div id="messageField" class="output">
+         Please guess a number, enter it, and press Guess:
+      </div>
+      <div id="inpField" class="input">
+         <input type="number" id="randGuess" style="width: 30%;">
+         <button id="guessBtn" onclick="compFunc(this);clickCount()">Guess</button>
+      </div>
+
+   </div>
+</body>
+</html>
